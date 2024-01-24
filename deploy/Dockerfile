@@ -12,7 +12,6 @@ RUN apk --no-cache add bash git openssh
 
 # modules: utilize build cache
 COPY go.mod ./
-COPY go.sum ./
 
 RUN go mod download
 COPY . .
